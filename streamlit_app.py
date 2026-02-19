@@ -9,7 +9,6 @@ from streamlit_drawable_canvas import st_canvas
 
 import mnist_preprocessor_input as preproc  # innehåller: to_mnist_like_01(path) -> (X, original, canvas)
 
-
 # Behövs eftersom att min preprocess är byggd på att en bildfil skickas in.
 def preprocess_pil_via_tempfile(input_pil: Image.Image):
     """
