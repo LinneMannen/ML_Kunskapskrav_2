@@ -61,10 +61,6 @@ def load_model():
 
 model = load_model()
 
-# (valfri sanity check under utveckling)
-# st.write("Has predict_proba:", hasattr(model, "predict_proba"))
-
-
 # =========================
 # Layout
 # =========================

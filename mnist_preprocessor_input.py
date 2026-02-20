@@ -5,10 +5,15 @@ from PIL import Image
 from scipy import ndimage
 
 # Detta steget gjordes väldigt lätt av att läsa DESC i mnist. Dokumentera alla steg som de beskriver och försöka göra likadant här.
+# Jag använde mig även av bilden på en femma som jag skrev ut i Mnist_Modeller för att se hur de faktiskt kan se ut.
 # Det som var svårt var att få bort skuggor och liknande från bilder tagna på papper med telefonen. 
+# Ville man bara köra predict mot handritade siffror på en dator så var det väldigt simpelt.
 # Skuggorna kunde vara olika starka och behöva hanteras olika. Igenom att mixtra med parametrarna så hittade jag tillslut rätt
 # Självklart kommer det alltid gå att lura modellen. Exempelvis om man skulle skriva en siffra med en röd bläckpenna
 # Det skulle detta skriptet ha svårt att se. Programmet hade förmodligen filtrerat bort det som brus/skugga.
+# Hade man velat så hade man kunnat utveckla appen ännu mer för att exempelvis vrida upp input siffror för att ta eventuella liggande siffror
+# Man hade också kunnat göra appen mer användarvänlig och lagt in varningar för otydliga streck, beskrivningar av hur man ska skriva för bäst resultat osv.
+
 
 def to_mnist_like_01(path: str):
 
