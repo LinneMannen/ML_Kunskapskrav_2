@@ -7,3 +7,4 @@ mnist_svc_production : min färdiga modell sparad med joblib
 streamlit_app.py : Mitt skript för streamlit appen för att predicta egna handritade siffror
 siffra5 & siffra6 bilder på två siffror som jag testat lite med
 requirements.txt : mina requirements till streamlit appen
+självutvärdering : självutvärderingen enligt uppgiften
