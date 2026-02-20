@@ -1,0 +1,20 @@
+
+1. Har något varit utmanande i kursen/kunskapskontrollerna? Om ja, hur har du
+hanterat det?
+
+Att förstå vissa koncept har ibland varit utmanande men så är det ju med områden som man är ny i.
+Jag har hanterat det med att ha tålamod och ta en sak i taget.
+
+2. Vilket betyg anser du att du ska ha och varför?
+
+Jag anser att jag ska ha VG eftersom att jag inte bara uppfyller kursens lärandempl utan även visar en fördjupad förståelse,
+är nyfiken och gräver på djupet när jag arbetar iterativt för att förbättre mina modeller. Jag motiverar sedan mina modellval
+och analyserar resultatet med flera mått för att verkligen förstå modellens styrkor och svagheter. Utöver detta har jag likt
+beskrivningen implementerat ett komplett ML-flöde och byggt en fungerande app för prediktion av ny data.
+Om något behöver kompltteras så gör jag gärna det.
+
+3. Något du vill lyfta fram till Terese?
+
+En liten önskan jag har är att göra uppgiften lite mer "verklig". Kanske ha ett uttalat användningsområde för våran app
+eller en tydlig kravspec. På så sätt kan man motivera sina val till något. Nu fick man jaga bästa resultat
+utan att riktigt veta när det är tillräckligt. 
