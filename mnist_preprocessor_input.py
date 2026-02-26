@@ -25,7 +25,7 @@ def to_mnist_like_01(path: str):
     original = arr.copy()
 
     # Tar bort brus och skuggor kraftigt. Detta för att kunna läsa handskrivna  siffror papper med dålig tagna bilder.
-    arr = np.clip(arr * 2.5, 0, 255)
+    arr = np.clip(arr * 2.7, 0, 255)
 
      # Inverterar bilden om den är ljus istället för mörk
     if arr.mean() > 127:
@@ -73,6 +73,11 @@ def to_mnist_like_01(path: str):
     shift_y = int(round(14 - cy)) if not np.isnan(cy) else 0
     shift_x = int(round(14 - cx)) if not np.isnan(cx) else 0
     canvas = ndimage.shift(canvas, shift=(shift_y, shift_x), order=1, mode="constant", cval=0.0)
+
+    # Tjockar strecken lite för att lättare plocka upp svaga streck efter min hårda skugg/brus borttagning.
+    # Detta gör att det fungerar skapligt på även streckat papper och även att den tar fler "fula" siffror rätt
+    canvas = ndimage.grey_dilation(canvas, size=(2, 2))
+    canvas = np.clip(canvas, 0.0, 1.0)
 
     X = canvas.reshape(1, -1).astype(np.float32)
 
