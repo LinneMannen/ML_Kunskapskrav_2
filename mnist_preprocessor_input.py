@@ -25,7 +25,7 @@ def to_mnist_like_01(path: str):
     original = arr.copy()
 
     # Tar bort brus och skuggor kraftigt. Detta för att kunna läsa handskrivna  siffror papper med dålig tagna bilder.
-    arr = np.clip(arr * 3, 0, 255)
+    arr = np.clip(arr * 2.5, 0, 255)
 
      # Inverterar bilden om den är ljus istället för mörk
     if arr.mean() > 127:
