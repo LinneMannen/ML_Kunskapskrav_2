@@ -11,7 +11,9 @@ from scipy import ndimage
 # Skuggorna kunde vara olika starka och behöva hanteras olika. Igenom att mixtra med parametrarna så hittade jag tillslut rätt
 # Självklart kommer det alltid gå att lura modellen. Exempelvis om man skulle skriva en siffra med en röd bläckpenna
 # Det skulle detta skriptet ha svårt att se. Programmet hade förmodligen filtrerat bort det som brus/skugga.
-# Hade man velat så hade man kunnat utveckla appen ännu mer för att exempelvis vrida upp input siffror för att ta eventuella liggande siffror
+# Hade man velat så hade man kunnat utveckla appen ännu mer för att exempelvis vrida upp input siffror för att ta eventuella liggande siffror.
+# Hur mycket man än skruvar så kommer det förmodligen att finnas sätt att lura appen att prediktera fel. 
+# Men för denna enkla uppgift så får man vara nöjd såhär.
 # Man hade också kunnat göra appen mer användarvänlig och lagt in varningar för otydliga streck, beskrivningar av hur man ska skriva för bäst resultat osv.
 
 
